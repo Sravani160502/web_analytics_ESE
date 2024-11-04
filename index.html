@@ -36,6 +36,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WX45SL4X');</script>
 <!-- End Google Tag Manager -->
+
+&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src=&quot;https://www.googletagmanager.com/gtag/js?id=G-3Y3D6CLL3L&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag(&#39;js&#39;, new Date());
+
+gtag(&#39;config&#39;, &#39;G-3Y3D6CLL3L&#39;);
+&lt;/script&gt;
+
 </head>
 
 <body>
@@ -402,6 +413,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+
+<button id="select-item">Select Item</button>
+    <script>
+document.getElementById("select-item").addEventListener("click", function() {
+    gtag('event', 'select_item', {
+        'item_id': 'item_001',
+        'item_name': 'Sample Smartphone',
+        'category': 'Electronics'
+    });
+});
+</script>
 
     
 </body>
