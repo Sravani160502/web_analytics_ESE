@@ -19,13 +19,13 @@
       </style>
 <!-- GA4 SNIPPET -->
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Y3D6CLL3L"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F70N8K87E4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-3Y3D6CLL3L');
+  gtag('config', 'G-F70N8K87E4');
 </script>
 
 <!--     Gtm snippet -->
@@ -434,16 +434,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 
-<button id="select-item">Select Item</button>
+<button> View Items</button>
     <script>
-document.getElementById("select-item").addEventListener("click", function() {
-    gtag('event', 'select_item', {
-        'item_id': 'item_001',
-        'item_name': 'Sample Smartphone',
-        'category': 'Electronics'
+  gtag("event", "view_item_list", {
+  item_list_id: "related_products",
+  item_list_name: "Related products",
+  items: [
+        // If someone purchases more than one item,
+        // you can add those items to the items array
+         {
+          item_id: "ITM_12345",
+          item_name: "Python",
+          affiliation: "Online_Course",
+          currency = "INR",
+          discount: 100,
+          item_brand: "MOOC",
+          item_category: "Python",
+          item_category2: "ML",
+          item_category3: "DS",
+          item_category4: "CS",
+          item_variant: "Online",
+          location_id: "ChIJIQBpAG2ahYAR_6128GcTUEo",
+          price: 5000,
+          quantity: 1
+        }]
     });
-});
-</script>
+
+    </script>
+
 
 <!--     GTM COLLEGE  -->
     <!-- Google Tag Manager (noscript) -->
