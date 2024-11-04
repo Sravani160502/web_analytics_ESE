@@ -435,7 +435,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 
-<button> View Items</button>
+
+
+<!--     GTM COLLEGE  -->
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPPHRJ4J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <button> View Items</button>
     <script>
   gtag("event", "view_item_list", {
   item_list_id: "related_products",
@@ -462,13 +470,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     });
 
     </script>
+    <button id="select-item">Select Item</button>
+    <script>
+document.getElementById("select-item").addEventListener("click", function() {
+    gtag('event', 'select_item', {
+        'item_id': 'ITM_12345',
+        'item_name': 'Python',
+        'category': 'Online_Course'
+    });
+});
+</script>
+<button id="add-to-cart">Add to Cart</button>
+<script>
+document.getElementById("add-to-cart").addEventListener("click", function() {
+    gtag('event', 'add_to_cart', {
+        'item_id': 'ITM_12345',
+        'item_name': 'Python',
+        'category': 'Online_Course',
+        'price': 5000,
+        'quantity': 1
+    });
+});
+</script>
+<button id="remove-from-cart">Remove from Cart</button>
+<script>
+document.getElementById("remove-from-cart").addEventListener("click", function() {
+    gtag('event', 'remove_from_cart', {
+        'item_id': 'ITM_12345',
+        'item_name': 'Python',
+        'category': 'Online_Course'
+    });
+});
+</script>
+<button id="start-checkout">Start Checkout</button>
+<script>
+document.getElementById("start-checkout").addEventListener("click", function() {
+    gtag('event', 'begin_checkout', {
+        'items': [{
+            'item_id': 'TM_12345',
+            'item_name': 'Python',
+            'category': 'Online_Course',
+            'price': 5000,
+            'quantity': 1
+        }]
+    });
+});
+</script>
 
-
-<!--     GTM COLLEGE  -->
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPPHRJ4J"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
     
 </body>
 
